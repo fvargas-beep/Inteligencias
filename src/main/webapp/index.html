@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Iniciar Sesión</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+            body{
+                background-image: url("https://images.pexels.com/photos/937782/pexels-photo-937782.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+                background-size: 100vw 100vh;
+                background-repeat: no-repeat;
+                overflow: hidden;
+            }
+
+            .container{
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                opacity: 0.7;
+                height: 240px;
+                width: 450px;
+                border-radius: 10px;
+                text-align: center;
+                left: 30%;
+                top: 30%;
+            }
+            .boton{
+                background-color: #EA4C89;
+                border-radius: 8px;
+                border-style: none;
+                box-sizing: border-box;
+                color: #FFFFFF;
+                cursor: pointer;
+                display: inline-block;
+                font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                height: 40px;
+                line-height: 20px;
+                list-style: none;
+                margin: 0;
+                outline: none;
+                padding: 10px 16px;
+                position: relative;
+                text-align: center;
+                text-decoration: none;
+                transition: color 100ms;
+                vertical-align: baseline;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+            }
+            .boton:hover {
+                background-color: #F082AC;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="container">
+            <form action="./index" method="post">
+                <h2>Iniciar sesión</h2>
+                <label for="cedula">Cédula:</label>
+                <input type="number" id="cedula" name="cedula" required placeholder="Ingrese su cédula"><br><br>
+                <input type="submit" class="boton" id="submit" value="Ingresar"/>
+            </form>
+        </div>
+    </body>
+</html>
